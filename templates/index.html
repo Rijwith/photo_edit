@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload Image</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('/static/upload_bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a class="navbar-brand">
+        <img src="/static/logo.png" alt="PhotoEdit Logo" width="100" height="100">
+        PhotoEdit
+        </a>
+        
+        <label for="navbcar-toggle" class="navbar-toggler" aria-label="Toggle navigation"></label>
+        <div class="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Upload</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="container_upload">
+        <header>
+            <h1>Upload Image</h1>
+        </header>
+        <div class="container">
+            <form method="POST" enctype="multipart/form-data" action="/index">
+                <label for="image">Select an image file:</label>
+                <input type="file" id="image" name="file" accept=".pdf, .png, .jpg, .jpeg, .gif, .webp" required><br><br>
+                
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

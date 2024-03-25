@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoEdit</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a class="navbar-brand">
+        <img src="/static/logo.png" alt="PhotoEdit Logo" width="100" height="100">
+        PhotoEdit
+        </a>
+        
+        <label for="navbar-toggle" class="navbar-toggler" aria-label="Toggle navigation"></label>
+        <div class="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Upload</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <p class="lead"><b>FREE ONLINE</b></p>
+            <h1 class="display-4">PhotoEdit</h1>
+            <p class="lead"><b>Your Ultimate Photo Editing Experience</b></p>
+            <a href="/index" class="btn btn-primary btn-lg mt-3 btn-get-started">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Photo Grid with Explanations -->
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12 mb-4">
+            <div class="photo-item" id="photo1">
+            <div class="row">
+                <div class="col-lg-6">
+                <img src="/static/blur.jpg" class="img-fluid" alt="Photo 1">
+                </div>
+                <div class="col-lg-6">
+                <div class="photo-description">
+                    <h4>Blur Functionality</h4>
+                    <p>Apply a blur effect to your images to create a soft focus or add artistic blur effects.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-4">
+            <div class="photo-item" id="photo2">
+            <div class="row">
+                <div class="col-lg-6">
+                <img src="/static/rotate.jpg" class="img-fluid" alt="Photo 2">
+                </div>
+                <div class="col-lg-6">
+                <div class="photo-description">
+                    <h4>Rotate Functionality</h4>
+                    <p>Rotate images to any angle within seconds. Do a 180 and turn your picture upside down. Turn it sideways or tilt the photo to the left or right. With HR PhotoEdits’ image rotator, you can change your photo’s orientation in a snap.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-4">
+            <div class="photo-item" id="photo3">
+            <div class="row">
+                <div class="col-lg-6">
+                <img src="/static/crop.jpg" class="img-fluid" alt="Photo 3">
+                </div>
+                <div class="col-lg-6">
+                <div class="photo-description">
+                    <h4>Crop Functionality</h4>
+                    <p>Select a specific area of your images and crop it to remove unwanted parts or focus on a subject.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2024 PhotoEdit. All rights reserved.
+        <br>
+        Connect with us:
+        <br>
+        <a href="https://github.com/Rijwith" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rijwith-mamidi/" target="_blank">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
